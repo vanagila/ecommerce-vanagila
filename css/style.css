@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --cor-primaria: #2e245e;
+  --cor-secundaria: #6b54de;
+  --cinza-cem: #333333;
+  --cinza-cinquenta: #828282;
+  --cinza-zero: #f5f5f5;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/*HEADER*/
+header {
+  background-color: var(--cinza-zero);
+  height: 70px;
+}
+
+header .conteudo__cabecalho {
+  margin-left: 118px;
+  margin-right: 118px;
+}
+
+.conteudo__cabecalho .logo {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--cinza-cem);
+  height: 24px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo h1 {
+  margin-top: 23px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul li {
+  padding: 0 0 0 20px;
+}
+
+.menu a {
+  font-size: 16px;
+  color: var(--cinza-cinquenta);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--cor-primaria);
+}
+
+main {
+  margin-left: 115px;
+  margin-right: 115px;
+}
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1330px;
+  height: 886px;
+}
+.cardGrupo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.card__conteudo {
+  width: 298px;
+  height: 379px;
+  border: 2px solid var(--cinza-zero);
+  margin-bottom: 55px;
+  margin-left: 50px;
+}
+
+.card__conteudo:hover {
+  border: 2px solid var(--cor-primaria);
+}
+
+.card__imagem figure {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 298px;
+  height: 150px;
+  background-color: var(--cinza-zero);
+}
+
+.card__conteudo button {
+  width: 72px;
+  height: 26px;
+  margin-top: 15px;
+  margin-left: 17px;
+  border: 1px solid var(--cor-primaria);
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: var(--cor-primaria);
+}
+
+.card__texto {
+  width: 296px;
+  height: 215px;
+  background-color: #ffffff;
+}
+
+.card__texto h2 {
+  width: 176px;
+  height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 17px;
+  padding-top: 15px;
+  color: var(--cinza-cem);
+}
+
+.card__texto p:nth-child(3) {
+  width: 269px;
+  height: 33px;
+  padding-top: 15px;
+  margin-left: 17px;
+  font-size: 12px;
+  color: var(--cinza-cinquenta);
+}
+
+.card__texto span {
+  width: 269px;
+  height: 16px;
+  padding-top: 15px;
+  margin-left: 17px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-primaria);
+}
+
+.card__texto p:last-child {
+  width: 147px;
+  height: 16px;
+  padding-top: 15px;
+  margin-left: 17px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--cinza-cinquenta);
+}
+
+.card__texto p:last-child:hover {
+  color: var(--cor-secundaria);
+}
+
+/*PESQUISA*/
+.pesquisa__carrinho {
+  width: 20%;
+}
+
+.pesquisa {
+  width: 347px;
+  display: flex;
+  margin-top: 27px;
+}
+
+.pesquisa input {
+  width: 246px;
+  background-color: var(--cinza-zero);
+  border: 1px solid var(--cinza-zero);
+  color: var(--cinza-cinquenta);
+  font-size: 14px;
+  padding-left: 14px;
+  margin-right: 8px;
+}
+
+.pesquisa button {
+  width: 96px;
+  height: 50px;
+  background-color: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/*CARRINHO*/
+
+.carrinho {
+  width: 347px;
+}
+
+.carrinho__header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-secundaria);
+  height: 50px;
+  margin-top: 10px;
+}
+
+.carrinho__header h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.carrinho__conteudo {
+  background-color: var(--cinza-zero);
+  padding-top: 21px;
+  height: 462px;
+}
+
+.carrinho__jaqueta,
+.carrinho__touca,
+.carrinho__camisa {
+  display: flex;
+  margin-top: 21px;
+  margin-left: 20px;
+}
+
+figure.fundo__imagem {
+  background-color: #ffffff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.carrinho__texto {
+  margin-left: 15px;
+}
+
+.carrinho__texto h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--cinza-cem);
+  margin-bottom: 10px;
+}
+
+.carrinho__texto p {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+}
+
+.carrinho__texto p:last-child {
+  font-size: 12px;
+  font-weight: 400px;
+  color: var(--cinza-cinquenta);
+  margin-bottom: 10px;
+}
+
+.carrinho__jaqueta {
+  margin-bottom: 20px;
+}
+
+.carrinho__jaqueta img {
+  width: 79px;
+  height: 61px;
+  padding-top: 11px;
+  padding-bottom: 8px;
+}
+
+.carrinho__touca img {
+  width: 76px;
+  height: 48px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.carrinho__camisa img {
+  width: 73px;
+  height: 53px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
+.carrinho__rodape {
+  background-color: var(--cinza-cem);
+  width: 343px;
+  height: 126px;
+  margin-top: 29px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.carrinho__rodape p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.carrinho__rodape span {
+  font-size: 16px;
+  color: var(--cinza-cinquenta);
+}
+
+.carrinho__quantidade {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 17px;
+  padding-bottom: 32px;
+}
+
+.carrinho__quantidade span {
+  padding-left: 175px;
+  width: 12px;
+}
+
+.carrinho__total p {
+  width: 79px;
+  height: 16px;
+}
+
+.carrinho__total {
+  display: flex;
+  padding-left: 17px;
+}
+
+.carrinho__total span {
+  padding-left: 147px;
+  width: 79px;
+}
